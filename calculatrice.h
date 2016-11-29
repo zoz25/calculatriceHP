@@ -15,12 +15,12 @@ class Calculatrice
 		friend ostream& operator<< (ostream& os, const Problem& pbm);
 		friend istream& operator>> (istream& is, Problem& pbm);
 
-		Calculatrice& operator=  (const Problem& pbm);
-		bool operator== (const Problem& pbm) const;
-		bool operator!= (const Problem& pbm) const;
+		Calculatrice& operator=  (const Calculatrice& calculatriceHP);
+		bool operator== (const Calculatrice& calculatriceHP) const;
+		bool operator!= (const Calculatrice& calculatriceHP) const;
 	
 	private:
-		Pile& d_pile;
+		const Pile& d_pile;
 		Operation& d_operation;
 		
   };

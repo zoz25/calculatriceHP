@@ -15,9 +15,9 @@ class Operation
 		friend ostream& operator<< (ostream& os, const Problem& pbm);
 		friend istream& operator>> (istream& is, Problem& pbm);
 
-		Operation& operator=  (const Problem& pbm);
-		bool operator== (const Problem& pbm) const;
-		bool operator!= (const Problem& pbm) const;
+		Operation& operator=  (const Operation& oprt);
+		bool operator== (const Operation& oprt) const;
+		bool operator!= (const Operation& oprt) const;
 	
 	private:
 		Pile& d_pile;
