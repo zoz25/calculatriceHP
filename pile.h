@@ -12,12 +12,13 @@ class Pile
 		Pile();
 		~Pile();
 
-		friend ostream& operator<< (ostream& os, const Problem& pbm);
-		friend istream& operator>> (istream& is, Problem& pbm);
+		friend ostream& operator<< (ostream& os, const Pile& pile);
+		friend istream& operator>> (istream& is, Pile& pile);
 
 		Operation& operator=  (const Pile& pl);
 		bool operator== (const Pile& pl) const;
 		bool operator!= (const Pile& pl) const;
+		void ajouterOperande(double valeur);
 	
 	private:
 		vector<double> d_tableau;
