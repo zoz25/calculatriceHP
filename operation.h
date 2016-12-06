@@ -20,7 +20,10 @@ class Operation
 		bool operator!= (const Operation& oprt) const;
 	
 	private:
+		
+		
 		Pile& d_pile;
+		//char d_operation il faut que ca soit un tableau de char c'est mieux pour les opérations
   };
   #endif
 

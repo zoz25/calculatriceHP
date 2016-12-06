@@ -12,16 +12,24 @@ class Calculatrice
 		Calculatrice();
 		~Calculatrice();
 
-		friend ostream& operator<< (ostream& os, const Problem& pbm);
-		friend istream& operator>> (istream& is, Problem& pbm);
+		friend ostream& operator<< (ostream& os, const Calculatrice& calculatriceHP);
+		friend istream& operator>> (istream& is, Calculatrice& calculatriceHP);
 
 		Calculatrice& operator=  (const Calculatrice& calculatriceHP);
 		bool operator== (const Calculatrice& calculatriceHP) const;
 		bool operator!= (const Calculatrice& calculatriceHP) const;
+		
+		// ajouter une operande dans d_operande
+		void ajouterOperande(double valeur);
+		// supprimer une operande dans d_operande
+		int supprimerOperande();
+		//ajouter une operation
+		void ajouterOperation(char op);
 	
 	private:
-		const Pile& d_pile;
+		Operande& d_operande;
 		Operation& d_operation;
+		
 		
   };
   
