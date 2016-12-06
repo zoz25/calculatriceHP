@@ -18,12 +18,14 @@ class Operation
 		Operation& operator=  (const Operation& oprt);
 		bool operator== (const Operation& oprt) const;
 		bool operator!= (const Operation& oprt) const;
+		void ajouterOperation(double valeur);
+		double supprimerOperation();
 	
 	private:
 		
 		
-		Pile& d_pile;
-		//char d_operation il faut que ca soit un tableau de char c'est mieux pour les opérations
+		Pile& d_pileOperation;
+		
   };
   #endif
 

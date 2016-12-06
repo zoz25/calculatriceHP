@@ -22,9 +22,9 @@ class Calculatrice
 		// ajouter une operande dans d_operande
 		void ajouterOperande(double valeur);
 		// supprimer une operande dans d_operande
-		int supprimerOperande();
+		double supprimerOperande();
 		//ajouter une operation
-		void ajouterOperation(char op);
+		void ajouterOperation(double valeur);
 	
 	private:
 		Operande& d_operande;

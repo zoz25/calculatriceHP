@@ -23,11 +23,18 @@ class Operande
 		double getY();
 		void ajouterOperande(double valeur);
 		double supprimerOperande();
+		void somme();
+		void soustraction();
+		void multiplication();
+		void division();
+		void cosinus();
+		void sinus(); 
+		void sqrt();
 	
 	private:
-		Pile d_pile;
-		double x;
-		double y;
+		Pile d_pileOperande;
+		double d_x;
+		double d_y;
   };
   #endif
 
