@@ -22,6 +22,7 @@ class Calculatrice
 		// ajouter une operande dans d_operande
 		void ajouterOperande(double valeur);
 		// supprimer une operande dans d_operande
+<<<<<<< HEAD
 		void supprimerOperande();
 		//ajouter une operation
 		void ajouterOperation(char op);
@@ -38,6 +39,11 @@ class Calculatrice
 		void cosinus();
 		void sinus();
 		void racine(); 
+=======
+		double supprimerOperande();
+		//ajouter une operation
+		void ajouterOperation(double valeur);
+>>>>>>> origin/master
 	
 	private:
 	Pile d_operande;

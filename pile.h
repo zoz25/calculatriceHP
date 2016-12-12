@@ -18,11 +18,16 @@ class Pile
 		Operation& operator=  (const Pile& pl);
 		bool operator== (const Pile& pl) const;
 		bool operator!= (const Pile& pl) const;
+<<<<<<< HEAD
 		
 		
 		void ajouterElement(double valeur);
 		void supprimerElement(void);
 		
+=======
+		void ajouterElement(double valeur);
+		double supprimerElement();
+>>>>>>> origin/master
 	
 	private:
 		vector<double> d_tableau;
