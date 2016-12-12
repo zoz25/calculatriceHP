@@ -25,10 +25,12 @@ class Calculatrice
 		int supprimerOperande();
 		//ajouter une operation
 		void ajouterOperation(char op);
+		
+		//effectuer opération 
 	
 	private:
-		Operande& d_operande;
-		Operation& d_operation;
+	Pile d_operande;
+	char operation;
 		
 		
   };
