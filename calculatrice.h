@@ -22,11 +22,22 @@ class Calculatrice
 		// ajouter une operande dans d_operande
 		void ajouterOperande(double valeur);
 		// supprimer une operande dans d_operande
-		int supprimerOperande();
+		void supprimerOperande();
 		//ajouter une operation
 		void ajouterOperation(char op);
 		
-		//effectuer opération 
+		//retourne le premier element du tableau
+		double getOperande(void);
+		
+		
+		//effectuer opération
+		void somme();
+		void soustraction();
+		void multiplication();
+		void division();
+		void cosinus();
+		void sinus();
+		void racine(); 
 	
 	private:
 	Pile d_operande;
