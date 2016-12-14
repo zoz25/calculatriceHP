@@ -36,5 +36,6 @@ class Operande
 		double d_x;
 		double d_y;
   };
+  //test commit
   #endif
 
