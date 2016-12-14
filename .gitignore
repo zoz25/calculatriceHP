@@ -52,3 +52,7 @@ calculatriceHP.exe
 calculatriceHP.layout
 *.o
 Mikefile.win
+.idea/calculatriceHP.iml
+.idea/modules.xml
+*.xml
+cmake-build-debug/CMakeFiles/clion-log.txt
